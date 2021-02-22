@@ -2,7 +2,7 @@
 We used CNN to train a breast cancer subtype classifier and did a simple UI interface for it. It's a windows Qt application, you can click to upload a histology image of breast, and the app will tell you which type it is, specifically Benign, Normal, Invasive, In Situ.
 You can download all the files and run main.py and it will generate a UI interface in which you can upload images and get a prediction.
 Or you can also use the console to train a model or make predictions for a bunch of images in a file.
-![grab-landing-page](https://github.com/winnie1312/grab/blob/master/grab-landingpage-winnie.gif)
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 # Functions
 ## Train a model
 ## Predict an image
