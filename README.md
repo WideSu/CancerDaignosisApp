@@ -22,6 +22,7 @@ We use a pre-trained CNN model on Keras to predict the subtype of breast cancer.
 - Trained the CNN for image classification to divide those images into four types, which are "invasive", "benign", "normal", "in Situ". And achieved an average accuracy "of 77%" for classifying cancer images.
 
 ## 3. Generate sound for the diagnosis result
+Used a python package tts-wrapper to turn the diagnosis result text into voice.
 ## 1. Train
 My network has 21 layers, the train data comes from the npy files on Google cloud disk, which is pre-processed and can grab up to use. My train data set has 4776 cases, and my evaluation data set has 240 cases. My batch size is 16, after training 20 epochs, my model can already have a 77% accuracy and 60% percent specificity. 
 If you don't want to train a new model, you can still make predictions. Since I uploaded my model(my_model.h5)
