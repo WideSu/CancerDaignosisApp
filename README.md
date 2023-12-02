@@ -16,6 +16,11 @@ Examples of microscopic biopsy images in the dataset: (A) normal; (B) benign; (C
 We use a pre-trained CNN model on Keras to predict the subtype of breast cancer.
 
 ## 2. Data Processing 
+- Collected data from open-source datasets(TUPAC) for breast cancer images
+- Resized the images into the same size(512*384)
+- Used data augmentation techniques (rotate, shift, and flip images randomly) to promote its generalisation ability
+- Trained the CNN for image classification to divide those images into four types, which are "invasive", "benign", "normal", "in Situ". And achieved an average accuracy "of 77%" for classifying cancer images.
+
 ## 3. Generate sound for the diagnosis result
 ## 1. Train
 My network has 21 layers, the train data comes from the npy files on Google cloud disk, which is pre-processed and can grab up to use. My train data set has 4776 cases, and my evaluation data set has 240 cases. My batch size is 16, after training 20 epochs, my model can already have a 77% accuracy and 60% percent specificity. 
@@ -23,6 +28,6 @@ If you don't want to train a new model, you can still make predictions. Since I 
 ## 2. Predict
 You can choose a whole-slide histology image and make predictions using the model. The result will be the probability of each section.
 ## 3. UI
-I use PyQt5 to do the simple UI interface which has a button to upload an image, and another button to predict the result.
+I use PyQt4 to do the simple UI interface which has a button to upload an image, and another button to predict the result.
 # 4. Text to Sound
 I use the Aliyun API to generate 4 sound files from text and recorded them. It will play one of the pre-recorded files after diagnosing one type of breast cancer.
